@@ -6,3 +6,5 @@
 *.pdf
 *.log
 *.fdb_latexmk
+*.sublime-project
+*.sublime-workspace
