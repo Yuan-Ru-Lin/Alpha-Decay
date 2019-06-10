@@ -31,7 +31,7 @@ Abstract. change to see if Overleaf-GitHub integration is good, guess it would w
 \end{abstract}
 
 \section{Introduction}
-We read an article which discuss various method for solving $\alpha$-decay. \cite{understandingAlphaDecay}
+We read an article which discuss various method for solving $\alpha$-decay. \cite{understandingalphadecay}
 
 \section{Breit-Wigner distribution}
 From the experiential exponential decaying law, the square of wavefunction decays exponentially along with time:
@@ -46,18 +46,18 @@ $$\psi(t) = \psi(0) \ e^{-iE_Rt} \ e^{-\frac{\Gamma}{2} t}.$$
 In order to see energy dependence, we perform Fourier Transform on the wavefunction:
 
 \begin{align*}
-\tilde{\psi}(E)
-&= \int \psi(t) e^{iEt} dt \\
-&= \int \psi(0) \ e^{-iE_Rt} e^{-\frac{\Gamma}{2} t} e^{iEt} dt\\
-&\propto \int e^{[i(E-E_R)-\Gamma/2]t} dt \\
-&\propto \frac{1}{(E-E_R)+i\Gamma/2}
+    \tilde{\psi}(E)
+    &= \int \psi(t) e^{iEt} dt \\
+    &= \int \psi(0) \ e^{-iE_Rt} e^{-\frac{\Gamma}{2} t} e^{iEt} dt\\
+    &\propto \int e^{[i(E-E_R)-\Gamma/2]t} dt \\
+    &\propto \frac{1}{(E-E_R)+i\Gamma/2}
 \end{align*}
 
 The probability of finding the particle at energy $E$ is then:
 
 \begin{align*}
-f(E) &= |\psi(t)|^2 \\
-&\propto \frac{1}{(E-E_R)^2+(\Gamma/2)^2}
+    f(E) &= |\psi(t)|^2 \\
+    &\propto \frac{1}{(E-E_R)^2+(\Gamma/2)^2}
 \end{align*}
 
 Such distribution is called a Breit-Wigner distribution.
@@ -69,13 +69,19 @@ Such distribution is called a Breit-Wigner distribution.
     \label{fig:genericPotential}
 \end{figure}
 
+
+\section{Construction of the propagator $D_F(x_2, x_1; E)$}
+    To construct the propagator from $x_1$ to $x_2,$ we utilize the WKB method to approximate the steady-potential part, and for the acute part, we calculate the “total amplitude” using Semiclassical Path Integral method; that is, we consider all possibilities that the particle travels in “zigzag” route.
+    \subsection{}
+    \subsection{}
+
 \bibliographystyle{unsrt}  
 \begin{thebibliography}{1}
-\bibitem{understandingAlphaDecay}
-George Kour and Raid Saabne.
-\newblock Real-time segmentation of on-line handwritten arabic script.
-\newblock In {\em Frontiers in Handwriting Recognition (ICFHR), 2014 14th
-  International Conference on}, pages 417--422. IEEE, 2014.
+    \bibitem{understandingAlphaDecay}
+    George Kour and Raid Saabne.
+    \newblock Real-time segmentation of on-line handwritten arabic script.
+    \newblock In {\em Frontiers in Handwriting Recognition (ICFHR), 2014 14th
+      International Conference on}, pages 417--422. IEEE, 2014.
 
 \end{thebibliography}
 
